@@ -1,0 +1,221 @@
+.landingPage {
+    background: var(--bodyColor);
+    min-height: 100vh;
+
+}
+
+.sideLink {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 60px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.sideLink:hover {
+    background: var(--containerColor);
+}
+
+.active>.sideLink {
+    background-color: var(--containerColor)
+}
+
+.active>div>h5 {
+    background-color: var(--containerColor);
+    color: var(--activeTextColor)
+}
+
+.sideLink:hover h5 {
+    color: var(--sideActiveColor) !important
+}
+
+.sideLink i {
+    display: flex;
+    margin-right: 10px;
+    color: var(--textHeading);
+    font-size: 24px;
+}
+
+.sideLink h5 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--textHeading);
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 20px;
+    user-select: none;
+}
+
+.landingPageContent {
+    display: flex;
+    display: 100%
+}
+
+.dashboardPages {
+    width: 100%;
+}
+
+.sidebarlogoDiv>img {
+    width: 125px;
+    margin-top: 16px;
+
+}
+
+#sideItems {
+    margin-top: 50px
+}
+
+.sidebarlogoDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebarlogoDiv i {
+    font-size: 30px;
+    color: var(--textHeading);
+    display: none;
+}
+
+.headerLinkDash {
+    display: none;
+    margin: auto;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#partnershipSideDiv {
+    display: flex;
+    align-items: center;
+}
+
+#partnershipSideDiv i {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--colorPrimary);
+    transition: all 0.3s;
+}
+
+#sideDropdown {
+    margin-left: 52px;
+    transition: height 0.5s;
+}
+
+#sideDropdown p {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: var(--textColor);
+}
+
+#sideDropdown p:hover {
+    color: var(--colorPrimary);
+}
+
+#topNotification {
+    padding: 0px 30px 30px 30px;
+    border-left: 1px solid #353535;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        position: fixed;
+        margin-right: 30px;
+        width: 100%;
+        background: var(--containerColor);
+        height: 100%;
+        left: 0;
+        padding: 30px;
+        z-index: 3;
+        transition: all 0.4s;
+    }
+
+    .sidebarlogoDiv i {
+        display: flex;
+    }
+
+    .headerLinkDash {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    #topNotification {
+        padding: 0px 0px 30px 0px;
+        border-left: 1px solid #353535;
+    }
+
+    .landingPage {
+        padding-bottom: 70px;
+    }
+}
+
+.bottomNavbar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 99;
+    background: linear-gradient(45deg, #202020, black, #202020);
+    display: none;
+}
+
+.bottomNavbar a {
+    text-align: center;
+    width: 100%;
+}
+
+.bottomNavbar i {
+    font-size: 20px;
+    color: white;
+}
+
+.bottomNavbar p {
+    margin: 0;
+    color: white;
+    font-size: 10px;
+}
+
+.bottomNavbar .col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomNavbar .row {
+    width: 100%;
+}
+
+
+.active .activeNav p,
+.active .activeNav i {
+    color: var(--colorPrimary);
+}
+
+@media (max-width: 1000px) {
+    .headerLinkDash {
+        display: block;
+    }
+
+    #topNotification {
+        border: none;
+    }
+
+    .bottomNavbar {
+        display: flex;
+    }
+}

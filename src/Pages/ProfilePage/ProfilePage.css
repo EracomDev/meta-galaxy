@@ -1,0 +1,58 @@
+.profileDetailUpdate {
+    background: var(--containerColor);
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.profileDetail img,
+.profileDetailUpdate img {
+    width: 100px;
+    object-fit: contain;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+}
+
+.profileDetail h5 {
+    margin-top: 5px;
+    color: white;
+    overflow-x: scroll;
+}
+
+.profileDetailUpdate>input {
+    width: 100%;
+    padding: 10px;
+    outline: none !important;
+    border-radius: 10px;
+    border: 1px solid var(--colorPrimary);
+    color: rgb(0, 0, 0) !important;
+    text-align: center;
+}
+
+.imageInput input {
+    width: 100%;
+    padding: 10px;
+    outline: none !important;
+    border-radius: 10px;
+    color: rgb(255, 255, 255) !important;
+    text-align: center;
+}
+
+.profileDetailUpdate button {
+    width: 100%;
+    margin-top: 10px;
+    background: var(--colorPrimary);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid transparent;
+
+}
+
+.profileDetail {
+    background: var(--containerColor);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}

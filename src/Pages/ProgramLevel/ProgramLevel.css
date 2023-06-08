@@ -1,0 +1,150 @@
+.topId {
+    color: var(--textHeading);
+}
+
+.topId>span {
+    color: grey;
+}
+
+.programTopHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.programTopHeading h1 {
+    color: var(--textHeading);
+    font-weight: 700;
+}
+
+#programLevelDiv1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#programLevelDiv1 p {
+    margin: 0;
+    color: var(--textColor);
+}
+
+#programLevelDiv1 h5 {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#programLevelDiv1 h5>i {
+    color: var(--colorPrimary);
+    display: flex;
+    margin-right: 3px;
+}
+
+#LevelTree2>span {
+    width: 25px;
+    height: 25px;
+    background: #f1c455;
+    border-radius: 50%;
+}
+
+#LevelTree1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0 8px 0;
+}
+
+#LevelTree1>span {
+    width: 35px;
+    height: 35px;
+    background: var(--colorPrimary);
+    border-radius: 50%;
+}
+
+#LevelTree2,
+#LevelTree3,
+#LevelTree4 {
+    display: flex;
+    justify-content: space-around;
+    margin: 8px 0;
+}
+
+#LevelTree4 {
+    margin-bottom: 20px;
+}
+
+#LevelTree3>span {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+#LevelTree4>span {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+#programLevelDiv3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#programLevelDiv3 p {
+    display: flex;
+    align-items: center;
+}
+
+#programLevelDiv3 p>i {
+    margin-right: 3px;
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+
+#programLevelDiv3 p {
+    color: var(--textHeading);
+}
+
+.programLevelMainDiv {
+    background: linear-gradient(45deg, #28302e, transparent);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.programLevelMainDiv:hover {
+    background: linear-gradient(45deg, #000000, #000000);
+}
+
+
+#noCycle {
+    text-align: center;
+    font-size: 25px;
+}
+
+#nodata img {
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+#nodata h1 {
+    margin-top: 15px;
+    color: rgb(128, 122, 122);
+}
+
+@media (max-width: 800px) {
+    .programTopHeading h1 {
+        font-size: 16px;
+    }
+
+    #nodata img {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,131 @@
+#dollar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.financeMainAccountCard h1 {
+    color: var(--colorPrimary);
+    font-size: 25px;
+    margin: 0 0 10px 0;
+}
+
+.usd {
+    color: var(--colorPrimary);
+    font-size: 25px;
+    margin: 0;
+    margin-top: 18px;
+}
+
+.btnDiv {
+    display: flex;
+}
+
+.financeMainAccountCard {
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--containerColor);
+}
+
+.financeMainAccountCard hr {
+    width: 100%;
+    background-color: var(--textColor);
+    height: 2px;
+    margin: 30px 0 60px 0;
+}
+
+#dollarIcon {
+    background: var(--colorPrimary);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5px;
+    border: 18px solid var(--lightColor)
+}
+
+.financeDailyIncome>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.financeDailyIncome {
+    background: var(--containerColor);
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.history table {
+    width: 100%;
+}
+
+thead tr th {
+    text-transform: uppercase;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-right: 50px;
+    padding: 10px;
+}
+
+.table {
+    overflow-x: auto;
+    padding: 30px 0;
+}
+
+.table tr {
+    border: none !important;
+}
+
+.table th {
+    color: var(--textColor);
+}
+
+.table p {
+    text-align: center;
+    margin: 50px 0;
+    color: var(--textColor);
+}
+
+.financeDailyIncome i {
+    width: 40px;
+    height: 40px;
+    background: var(--lightColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 27px;
+    color: var(--colorPrimary);
+}
+
+/* .table::-webkit-scrollbar{
+    display: none !important;
+} */
+.partnersSlotUser {
+    background: rgba(78, 77, 77, 0.521);
+}
+
+.partnersSlotUser div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.partnersSlotUser div p {
+    margin: 0;
+    color: var(--textColor);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.partnersSlotUser div:nth-child(odd) {
+    background-color: var(--containerColor);
+}
+
+#partnersSlotUserHeadings p {
+    color: var(--textHeading);
+}

@@ -1,0 +1,75 @@
+.programCardInnerDiv {
+    width: 100%;
+    padding-top: 14.6%;
+    /* background: #AA7256; */
+    background: linear-gradient(166deg, #f8d08c, #d09a67, #fad59e, #f1b08e);
+    position: relative;
+    border-radius: 5px;
+}
+
+.programCardRow .col-2 {
+    width: 14.6%;
+}
+
+.programCardRow {
+    gap: 10px;
+}
+
+.programCard {
+    padding: 20px;
+    box-shadow: 0px 0px 1px 0px #9b9999;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    background-image: url('./../../Images/loginbg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #151515b9;
+    background-blend-mode: overlay;
+}
+
+.programCardHeading {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.programCardPrice {
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+}
+
+.programCardPrice>span {
+    font-size: 14px;
+
+}
+
+.previewBtn {
+    width: 100%;
+}
+
+.previewBtn button {
+    border: 1px solid #5e5656;
+    color: white;
+    background: rgb(29 22 18 / 60%);
+    font-weight: 700;
+    box-shadow: none !important;
+}
+
+@media (max-width:800px) {
+    .previewBtn {
+        margin-top: 20px;
+    }
+
+    .programCardInnerDiv {
+        padding-top: 11.6%;
+    }
+
+    .programCardRow .col-2 {
+        width: 11.6%;
+    }
+}

@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'Lexend Deca', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrimary: #73BA3F;
+  --colorGolden: #f6e592;
+  --bodyColor: #151515;
+  --containerColor: #1D1D1D;
+  --textColor: rgb(131, 131, 131);
+  --textHeading: white;
+  --sideActiveColor: white;
+  --borderColor: #fff;
+  --lightColor: #252525;
+  --darkLightText: #fff;
+  --darkLightBackground: #181818;
+  --activeTextColor: white;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--containerColor);
+  width: 7px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+}
+
+.tableSection tbody tr:nth-child(odd) {
+  background: var(--darkLightBackground) !important;
+}
+
+.tableSection {
+  padding: 20px 20px !important;
+}
+
+.tableSection th {
+  color: var(--textHeading);
+  padding: 15px;
+}
+
+.tableSection td {
+  color: var(--textColor);
+  padding: 10px;
+}
+
+.tableSection {
+  width: 100%;
+  text-align: center;
+  background: var(--containerColor);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.heading {
+  color: var(--colorPrimary);
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background: linear-gradient(to right, #59a327, #4f9720, #8ae250, #7acd44, #adff77, #4eb30c);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+
+/* ------------------------------------------------------ */
+
+/* KEYFRAMES */
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(.5, .5, .5, 360deg);
+  }
+
+  to {
+    transform: rotate3d(0deg);
+  }
+}
+
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes configure-xclockwise {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(-135deg);
+  }
+
+  75% {
+    transform: rotate(-225deg);
+  }
+
+  100% {
+    transform: rotate(-315deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: .25;
+    transform: scale(.75);
+  }
+}
+
+/* GRID STYLING */
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.spinner-box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151515e1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+/* SOLAR SYSTEM */
+
+.solar-system {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fafbfC;
+  border-radius: 50%;
+}
+
+.earth-orbit {
+  width: 165px;
+  height: 165px;
+  -webkit-animation: spin 12s linear 0s infinite;
+  animation: spin 12s linear 0s infinite;
+}
+
+.venus-orbit {
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 7.4s linear 0s infinite;
+  animation: spin 7.4s linear 0s infinite;
+}
+
+.mercury-orbit {
+  width: 90px;
+  height: 90px;
+  -webkit-animation: spin 3s linear 0s infinite;
+  animation: spin 3s linear 0s infinite;
+}
+
+.planet {
+  position: absolute;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3ff9dc;
+}
+
+.sun {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffab91;
+}
+
+.leo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.blue-orbit {
+  width: 165px;
+  height: 165px;
+  border: 1px solid #91daffa5;
+  -webkit-animation: spin3D 3s linear .2s infinite;
+  animation: spin3D 3s linear .2s infinite;
+}
+
+.green-orbit {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #91ffbfa5;
+  -webkit-animation: spin3D 2s linear 0s infinite;
+  animation: spin3D 2s linear 0s infinite;
+}
+
+.red-orbit {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ffca91a5;
+  -webkit-animation: spin3D 1s linear 0s infinite;
+  animation: spin3D 1s linear 0s infinite;
+}
+
+.white-orbit {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  -webkit-animation: spin3D 10s linear 0s infinite;
+  animation: spin3D 10s linear 0s infinite;
+}
+
+.w1 {
+  transform: rotate3D(1, 1, 1, 90deg);
+}
+
+.w2 {
+  transform: rotate3D(1, 2, .5, 90deg);
+}
+
+.w3 {
+  transform: rotate3D(.5, 1, 2, 90deg);
+}
+
+.three-quarter-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fb5b53;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin .5s linear 0s infinite;
+}
